@@ -35,6 +35,7 @@ function displayName(region) {
     }
 }
 
+//adding is-active class when mouseenter on a path
 paths.forEach(function(path){
     
     path.addEventListener('mouseenter', function(){
@@ -47,6 +48,7 @@ paths.forEach(function(path){
     })
 })
 
+//Remove all is-active class when mouse over overrall map
 map.addEventListener('mouseover', function(){
     document.querySelectorAll('.is-active').forEach(function(item){
     item.classList.remove('is-active')
@@ -61,7 +63,7 @@ map.addEventListener('mouseover', function(){
 //regions.style.fill = colour;
 
 
-
+//Display of the colour on specify regions
 function colourRegion(data, colour){
     var regions = document.querySelector('#' + data);
     regions.classList.add('colour'+ colour) ;
@@ -81,6 +83,7 @@ var data1 = [['region-07', 'region-10'],
 
 colourGroupRegion(data1);
 
+//Swapping map on click
 function changeToData1(){
     document.getElementById('mapData1').style.display='block';
     document.getElementById('mapData2').style.display='none';

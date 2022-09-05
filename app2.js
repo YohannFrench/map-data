@@ -1,3 +1,6 @@
+//This file would be for the second interactive map class= "mapimage2" 
+//But in term of optimization maybe we can do better.
+
 var region = ['Setúbal',
 'Azores',
 'Madeira',
